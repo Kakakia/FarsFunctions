@@ -1,11 +1,10 @@
 Package: FarsFunctions
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Read and Analyze Road Fatality Data
 Version: 0.1.0
 Author: Who wrote it
 Maintainer: The package maintainer <ankai.xu>
 Description: The function loads and analyzes Fatality Analysis Reporting System data 
-from US National Highway Traffic Safety Administration.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
@@ -13,3 +12,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/Kakakia/FarsFunctions
+BugReports: https://github.com/Kakakia/FarsFunctions/issues
