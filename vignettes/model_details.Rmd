@@ -1,0 +1,48 @@
+---
+title: "FAR Functions"
+author: "Ankai Xu"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{FAR Functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(readr)
+library(dplyr)
+library(tidyr)
+library(maps)
+```
+
+The document introduces the package FarsFunctions. The packages loads and analyzes data from US 
+National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS).
+
+## Functions
+The package provides the following functions:
+`fars_summarize_years()` calculates the number of accidents per month for the particular years
+`fars_map_state()` maps the accidents for a given US state and year
+
+
+## Summarize monthly accidents
+
+`fars_summarize_years()` calculates the number of accidents per month for the particular year(s).
+
+For example, the following command gives the number of accidents per months for year 2013.
+```{r}
+fars_summarize_years(years = 2013)
+```
+
+## Map accidents by State
+`fars_map_state()` maps the accidents for a given US state and in a given year.
+
+For example, you can map the road fatality for State X in year 2013 with:
+```{r}
+fars_map_state(state.num = 10, year = 2013)
+```
+
