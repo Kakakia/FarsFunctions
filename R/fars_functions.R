@@ -88,7 +88,7 @@ fars_read_years <- function(years) {
 #' The function summarise  the accidents for the selected years and counts the number
 #' of reports per month.
 #'
-#' @inheritParams years fars_read_years
+#' @inheritParams fars_read_years
 #'
 #' @return The number of the accidents per month for each particular year as a data frame.
 #'
@@ -120,7 +120,7 @@ fars_summarize_years <- function(years) {
 #'
 #' @param state.num The state index as an integer
 #'
-#' @inheritParams year make_filenames
+#' @inheritParams make_filename
 #'
 #' @return The geographical map of the state with plotted traffic accidents. Each point
 #' represents a single case from the FARS data file for one specific year.

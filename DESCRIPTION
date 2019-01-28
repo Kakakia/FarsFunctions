@@ -14,3 +14,4 @@ Suggests:
 VignetteBuilder: knitr
 URL: https://github.com/Kakakia/FarsFunctions
 BugReports: https://github.com/Kakakia/FarsFunctions/issues
+RoxygenNote: 6.1.1
