@@ -7,13 +7,15 @@
 fars_summarize_years(years)
 }
 \arguments{
-\item{years}{The years of the accidents as a list or vector of integers}
+\item{years}{desired list of years for selecting data collected from the US National Highway Traffic Safety
+Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public
+yearly data regarding fatal injuries suffered in motor vehicle traffic crashes to be summarized.}
 }
 \value{
-The number of the accidents per month for each particular year as a data frame.
+a summary table wich contains the number of accidents grouped by year and month of the given list of years
 }
 \description{
-The function summarise  the accidents for the selected years and counts the number
+The function summarises  the accidents for the selected years and counts the number
 of reports per month.
 }
 \examples{

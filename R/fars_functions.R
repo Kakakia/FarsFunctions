@@ -85,16 +85,19 @@ fars_read_years <- function(years) {
 
 #' Calculate number of accidents per month for the particular years.
 #'
-#' The function summarise  the accidents for the selected years and counts the number
+#' The function summarises  the accidents for the selected years and counts the number
 #' of reports per month.
 #'
-#' @inheritParams fars_read_years
-#'
-#' @return The number of the accidents per month for each particular year as a data frame.
-#'
-#' @importFrom dplyr bind_rows group_by summarize
-#' @importFrom magrittr %>%
+#' @importFrom dplyr bind_rows
+#' @importFrom dplyr group_by
+#' @importFrom dplyr summarize
 #' @importFrom tidyr spread
+#'
+#' @param years desired list of years for selecting data collected from the US National Highway Traffic Safety
+#' Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public
+#' yearly data regarding fatal injuries suffered in motor vehicle traffic crashes to be summarized.
+#'
+#' @return a summary table wich contains the number of accidents grouped by year and month of the given list of years
 #'
 #' @examples
 #' \dontrun{
@@ -104,9 +107,9 @@ fars_read_years <- function(years) {
 #' }
 #'
 #' @export
-fars_summarize_years <- function(years) {
+fars_summarize_years <- function(years){
   dat_list <- fars_read_years(years)
-  dplyr::bind_rows(dat_list) %>%
+    dplyr::bind_rows(dat_list) %>%
     dplyr::group_by(year, MONTH) %>%
     dplyr::summarize(n = n()) %>%
     tidyr::spread(year, n)

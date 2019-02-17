@@ -5,8 +5,8 @@ Imports:
 Depends: maps
 Title: Read and Analyze Road Fatality Data
 Version: 0.1.0
-Author: Ankai Xu
-Maintainer: The package maintainer <ankai.xu@somewhere.net>
+Author: Ankai Hsu
+Maintainer: The package maintainer <ankai.hsu@somewhere.net>
 Description: The function loads and analyzes Fatality Analysis Reporting System data 
 License: GPL-3
 Encoding: UTF-8
