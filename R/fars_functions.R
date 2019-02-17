@@ -1,7 +1,6 @@
 #' Read .csv file into a data frame
 #'
-#' The function loads US National Highway Traffic Safety Administration \href{https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars}
-#' {Fatality Analysis Reporting System (FARS)} data and reads comma separated values file into a data frame.
+#' The function loads US National Highway Traffic Safety Administration data and reads comma separated values file into a data frame.
 #' If file doesn't exist, a warning message will appear.
 #'
 #' @param filename The name of data file as a character string.
