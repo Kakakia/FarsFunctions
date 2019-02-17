@@ -1,8 +1,9 @@
-require(testthat)
+library(testthat)
+library(dplyr)
+library(readr)
+library(tidyr)
+library(maps)
+library(graphics)
+library(farsfunctions)
 
-test_that("File name exists", {
-  file_name <<- make_filename("2014")
-  expect_that(file_name, is_a("character"))
-  expect_that(fars_read(), throws_error())
-})
-
+test_check("farsfunctions")
