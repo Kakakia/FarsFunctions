@@ -3,7 +3,7 @@
 language: R
 r:
   - release
-x
+
 cache: packages
 
 after_success:
