@@ -1,5 +1,14 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
 language: R
-sudo: false
+r:
+  - oldrel
+  - release
+  - devel
+
 cache: packages
+
+after_success:
+  - Rscript -e 'library(covr);coveralls()'
+
+warnings_are_errors: false
