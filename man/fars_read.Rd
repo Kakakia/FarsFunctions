@@ -18,7 +18,6 @@ If file doesn't exist, a warning message will appear.
 }
 \examples{
 \dontrun{
-data_2013 <- fars_read(filename = "accident_2013.csv.bz2")
+fars_read("accident_2013.csv.bz2")
 }
-
 }

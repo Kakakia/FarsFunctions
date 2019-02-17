@@ -23,7 +23,7 @@ original dataset.
 \dontrun{
 fars_read_years(years = 2013:2015)
 fars_read_years(years = c(2013, 2014, 2015))
-fars_read_years(years = list(2013 2014, 2015))
+fars_read_years(years = list(2013,2014,2015))
 }
 
 }

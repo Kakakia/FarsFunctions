@@ -12,9 +12,8 @@
 #'
 #' @examples
 #' \dontrun{
-#' data_2013 <- fars_read(filename = "accident_2013.csv.bz2")
-#' }
-#'
+#' fars_read("accident_2013.csv.bz2")
+#'}
 #' @export
 fars_read <- function(filename) {
   if(!file.exists(filename))
@@ -64,7 +63,7 @@ make_filename <- function(year) {
 #' \dontrun{
 #' fars_read_years(years = 2013:2015)
 #' fars_read_years(years = c(2013, 2014, 2015))
-#' fars_read_years(years = list(2013 2014, 2015))
+#' fars_read_years(years = list(2013,2014,2015))
 #' }
 #'
 #' @export
