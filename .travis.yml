@@ -2,10 +2,8 @@
 
 language: R
 r:
-  - oldrel
   - release
-  - devel
-
+x
 cache: packages
 
 after_success:
